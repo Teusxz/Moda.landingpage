@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #2e1c45;
+  color: #f8ede2;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+.texto {
+  flex: 1;
+  padding: 40px;
+  max-width: 600px;
+}
+
+.texto h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.subtitulo {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.beneficios {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.beneficios li {
+  margin-bottom: 15px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.beneficios li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: white;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #8666aa;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #a37cc2;
+}
+
+.imagem {
+  flex: 1;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagem img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .imagem {
+    order: -1;
+  }
+
+  .imagem img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .texto {
+    padding: 20px;
+  }
+
+  .texto h1 {
+    font-size: 32px;
+  }
+
+  .subtitulo {
+    font-size: 16px;
+  }
+
+  .botao {
+    width: 100%;
+    text-align: center;
+  }
+}
+.depoimentos {
+  background-color: #f8ede2;
+  color: #2e1c45;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.depoimentos h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.depoimento {
+  font-style: italic;
+  margin: 15px auto;
+  max-width: 600px;
+}
+
